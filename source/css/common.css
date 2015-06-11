@@ -1,0 +1,1939 @@
+@charset "shift_jis";
+
+/* =======================================
+
+ Common CSS
+
+========================================== */
+
+html, body {
+  color: #000000;
+  font-size:14px/1.231;
+  line-height:110%;
+  font-family: ArialMT, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3";
+    -webkit-text-size-adjust: none;
+}
+
+body {
+  -webkit-tap-highlight-color:rgba(255,153,0,0.6); /* タップ画面ハイライト */
+}
+
+/* ===== header ===== */
+
+header{
+  height:50px;
+  background:url(../images/common/header_bg.jpg) right top no-repeat;
+  -webkit-background-size: 225px 50px; /* Safari,Google Chrome用 */
+   -moz-background-size: 225px 50px; /* Firefox用 */
+   -o-background-size: 225px 50px; /* Opera用 */
+  background-size: 225px 50px;
+}
+
+header #site_title{
+  float:left;
+}
+
+header #bt_pc{
+  font-size:10px;
+  float:right;
+  background-color:#c1c1c1;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#fbfbfb), to(#c1c1c1));
+  border-left:solid 1px #9d9d9d;
+  border-bottom:solid 1px #9d9d9d;
+  border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 0px 4px;
+  padding-left:3px;
+}
+
+header #bt_pc a{
+  display:block;
+  color:#202020;
+  text-decoration:none;
+  padding:2px 3px 3px 17px;
+  background:url(../images/common/pc_icon.png) left center no-repeat;
+}
+
+/* ===== container ===== */
+
+div#container{
+  padding:3px 0 5px 0;
+  background:url(../images/common/container_bg.gif) top repeat-x;
+  -webkit-background-size: 1px 13px; /* Safari,Google Chrome用 */
+   -moz-background-size: 1px 13px; /* Firefox用 */
+   -o-background-size: 1px 13px; /* Opera用 */
+  background-size: 1px 13px;
+}
+
+div#container h2{
+  padding:4px 10px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-bottom:solid 1px #999999;
+  box-shadow: inset 0px 1px 1px #fff;
+  -webkit-box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+/* 20111216 ChouKen Begin*/
+div#container h6{
+  color:#fff;
+  background-color:#011f82;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#3f35cf), to(#011f82));
+  padding:7px 10px;
+}
+/* 20111216 ChouKen End*/
+
+
+/* ===== to top ===== */
+
+#to_top{
+  margin:5px 6px 8px 6px;
+  border:solid 1px #939393;
+  background-color:#d3d3d3;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#d3d3d3));
+}
+
+#to_top ul:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+#to_top ul li{
+  float:left;
+  width:59%;
+  list-style:none;
+
+}
+
+#to_top ul li:first-child{
+  border-right:solid 1px #666666;
+  width:40%;
+}
+
+#to_top ul li a{
+  display:block;
+  padding:3px 3px 3px 26px;
+  color:#333333;
+  font-size:12px;
+  text-decoration:none;
+}
+
+#to_top ul li a.home{
+  background:url(../images/common/home_icon.png) left center no-repeat;
+}
+
+#to_top ul li a.past{
+  background:url(../images/common/arrow_icon.png) left center no-repeat;
+}
+
+
+/* ===== article ===== */
+
+article{
+
+  }
+
+
+/* ===== footer ===== */
+
+footer{
+
+  }
+
+footer p{
+  font-size:11px;
+  padding:5px;
+  text-align:center;
+  color:#fff;
+  clear:both;
+  background-color:#011f82;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#3f35cf), to(#011f82));
+  }
+
+/* ===== plan ===== */
+#plan {
+  clear:both;
+  margin:10px 0px 10px 0px;
+}
+#plan .photo{
+  margin:6px 0 2px 0;
+  text-align:center;
+}
+
+#plan .photo img{
+  border:solid 1px #666;
+  margin-bottom:8px;
+}
+
+#plan p{
+  font-size:16px;
+  font-weight:bold;
+  padding:5px;
+  color:#fff;
+  clear:both;
+  margin:10px 0px 0px 0px;
+  background-color:#011f82;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#3f35cf), to(#011f82));
+}
+
+/* ===== plan room list ===== */
+#plan_room {
+  margin-bottom:10px;
+}
+
+#plan_room h2{
+  padding:4px 10px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-bottom:solid 1px #999999;
+  box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+#plan_room h3{
+  margin:10px 0px 10px 0px;
+  padding:7px 10px;
+}
+
+#plan_room p a{
+  display:inline;
+  margin:5px auto 20px auto;
+  padding:8px 20px 8px 30px;
+  font-size:12px;
+  font-weight:bold;
+  color:#fff;
+  text-shadow: 1px 1px 2px rgba(0 ,0 ,0 , 0.5);;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  border:solid 1px #092aac;
+  background-color:#536fdc;
+  background:url(../images/common/photo_icon.png) left center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#536fdc), to(#092aac));
+  -webkit-background-size: 27px 20px,100% 100% ; /* Safari,Google Chrome用 */
+  -moz-background-size:27px 20px,100% 100%; /* Firefox用 */
+  -o-background-size:27px 20px,100% 100%; /* Opera用 */
+  background-size:27px 20px,100% 100%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+}
+
+#plan_room .result {
+   margin:5px 0px 0px 7px;
+   font-size:16px;
+}
+
+#plan_room .result .condition {
+   color:#cc0000;
+   font-size:14px;
+   font-weight: bold;
+}
+
+#plan_room .room_box {
+  margin:10px 5px 3px 0px;
+  clear:both;
+  padding:2px 0px 0px 7px;
+  border-top:solid 3px #0223a6;
+}
+
+#plan_room .room_box .room_box_list{
+  float:left;
+}
+
+#plan_room .room_box .room_box_list h3{
+  font-weight:bold;
+  font-size:16px;
+  padding-left:10px;
+  list-style:none;
+}
+
+#plan_room .room_box .room_box_list h3 a{
+  display:inline;
+  margin:5px auto 20px auto;
+  padding:8px 20px 8px 0px;
+  font-size:16px;
+  font-weight:bold;
+}
+
+#plan_room .room_box .room_box_list h4{
+  margin:10px 5px 3px 0px;
+  display:inline;
+  background-color:#ccc;
+  color:#cc0000;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  font-size:12px;
+  padding:3px 4px;
+}
+
+#plan_room .room_box .room_box_list p{
+  margin:5px 0;
+}
+
+#plan_room .room_box .room_box_list p span.member{
+  background-color:#cc3300;
+  padding:3px 1px;
+  color:#fff;
+  font-size:12px;
+  margin-right:1px;
+}
+
+#plan_room .room_box  .room_box_list p span.general{
+  background-color:#0033cc;
+  padding:3px 1px;
+  color:#fff;
+  font-size:12px;
+  margin-right:1px;
+}
+
+#plan_room .room_box .room_box_list p span.price{
+  color:#cc0000;
+}
+
+#plan_room .room_box .room_box_list p span.condition{
+  color:#333333;
+  font-size:12px;
+}
+
+#plan_submit_btn input{
+	text-align:center;
+	font-size:15px;
+	font-weight:bold;
+	margin:10px auto;
+	color:#fff;
+	text-shadow: 1px 1px 2px #7a4500;
+	text-decoration:none;
+	font-weight:bold;
+	border-radius:7px;
+    -webkit-border-radius:7px;
+	border:solid 1px #9f5004;
+	background-color:#e07101;
+	background:url(../images/common/point_wite_ar.png) 90% center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#f1a70e), to(#e07101));
+	-webkit-background-size: 10px 10px,100% 100% ; /* Safari,Google Chrome逕ｨ */
+ 	-moz-background-size:10px 10px,100% 100%; /* Firefox逕ｨ */
+ 	-o-background-size:10px 10px,100% 100%; /* Opera逕ｨ */
+	background-size:10px 10px,100% 100%;
+	-webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+}
+
+/* ===== nav ===== */
+
+nav{
+
+}
+
+nav:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+nav ul li{
+
+}
+
+/* ===== 1-a_area_select  ===== */
+
+nav.area ul {
+  margin:5px 12px;
+}
+
+nav.area ul:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+nav.area ul li {
+  float:left;
+  border-radius:3px;
+    -webkit-border-radius:3px;
+  margin:1px 1px;
+  background-color:#071d7b;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#0827a7), to(#071d7b));
+}
+
+nav.area ul li a {
+  display:block;
+  padding:4px 6px;
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+}
+
+div#area_select {
+  margin:5px 12px;
+  border-radius:5px;
+    -webkit-border-radius:5px;
+  border:solid 1px #999999;
+}
+
+div#area_select dt {
+  background-color:#071d7b;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#0827a7), to(#071d7b));
+  color:#FFFFFF;
+  padding:10px 8px;
+  position:relative;
+  font-size:16px;
+}
+
+div#area_select dt:after{
+  position:absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+  border:solid 1px #000066;
+  border-radius:4px;
+    -webkit-border-radius:4px;
+  box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+  -webkit-box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+  background-image:url(../images/common/point_plus_bk.gif);
+  background-color:#fff;
+  -webkit-background-size: 15px 15px; /* Safari,Google Chrome用 */
+   -moz-background-size: 15px 15px; /* Firefox用 */
+   -o-background-size: 15px 15px;
+}
+
+div#area_select dt.selected {
+  background-color:#071d7b;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#0827a7), to(#071d7b));
+  color:#FFFFFF;
+}
+
+div#area_select dt.selected:after{
+  position:absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+  border:solid 1px #000066;
+  border-radius:4px;
+    -webkit-border-radius:4px;
+  box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+  -webkit-box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+  background-image:url(../images/common/point_minus_bk.gif);
+  background-color:#fff;
+  -webkit-background-size: 15px 15px; /* Safari,Google Chrome用 */
+   -moz-background-size: 15px 15px; /* Firefox用 */
+   -o-background-size: 15px 15px;
+}
+
+div#area_select dt:first-child {
+  border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+}
+
+div#area_select dt:not(:first-child)  {
+  border-top:solid 1px #ccc;
+}
+
+div#area_select dl dd ul li{
+  background-color:#fff;
+  background:  -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#CCC));
+  border-bottom:solid 1px #ccc;
+  list-style:none;
+  font-size:18px;
+}
+
+div#area_select dl dd ul li a{
+  display:block;
+  color:#003366;
+  padding:12px 8px;
+  text-decoration:none;
+  position:relative;
+}
+
+div#area_select dl dd ul li a:after{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/common/point_red_ar.png);
+}
+
+
+/* ===== 1-b_hotel_list 1-c_hotel_list 4-a_map===== */
+
+#hotel_list{
+  margin-bottom:10px;
+}
+
+#hotel_list h2{
+  padding:4px 10px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-bottom:solid 1px #999999;
+  box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+#hotel_list h2 span.hotel_area{
+  font-weight:normal;
+  margin-left:5px;
+}
+
+/* == map== */
+
+#hotel_list .map_box{
+  text-align:center;
+  margin:10px;
+}
+
+#hotel_list .map_box .place_now{
+  margin:0px auto 5px auto;
+}
+
+#hotel_list .map_box .place_now:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+#hotel_list .map_box .place_now .pn_btn_box{
+  float:left;
+  padding:0 5px 0 5px;
+  width:25%;
+  text-align:right;
+}
+
+#hotel_list .map_box .place_now .pn_btn_box a{
+  display:block;
+  padding:5px 18px 5px 3px;
+  margin:2px auto 0px auto;
+  color:#fff;
+  text-shadow: 1px 1px 2px #7a4500;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:7px;
+    -webkit-border-radius:7px;
+  border:solid 1px #9f5004;
+  background-color:#e07101;
+  background:url(../images/common/point_wite_ar.png) 93% center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#f1a70e), to(#e07101));
+  -webkit-background-size: 10px 10px,100% 100% ; /* Safari,Google Chrome用 */
+   -moz-background-size:10px 10px,100% 100%; /* Firefox用 */
+   -o-background-size:10px 10px,100% 100%; /* Opera用 */
+  background-size:10px 10px,100% 100%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+}
+
+#hotel_list .map_box .place_now .pn_input_box{
+  width:50%;
+  float:left;
+}
+
+#hotel_list .map_box .place_now input.pt_txt{
+  width:90%;
+  padding:5px 5px;
+  border:solid 1px #ccc;
+}
+
+#hotel_list .map_box .place_now .pn_inputbtn_box{
+  float:left;
+  width:20%;
+}
+
+#hotel_list .map_box .place_now .pn_inputbtn_box input{
+  background:url(../images/common/search_icon.png) center left no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#e3e3e3));
+  border:solid 1px #ccc;
+  background-color:#e3e3e3;
+  padding:3px 5px 3px 18px;
+  display:block;
+  width:90%;
+  border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+#hotel_list .map_box .map_btn{
+  width:282px;
+  margin:12px auto 0px auto;
+  background-color:#071d7b;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#0827a7), to(#071d7b));
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align:center;
+  position:relative;
+}
+
+#hotel_list .map_box .map_btn a{
+  color:#fff;
+  text-decoration:none;
+}
+
+#hotel_list .map_box .map_btn p{
+  display:block;
+  color: #fff;
+  text-decoration:none;
+  padding-left:14px;
+  background-position: 13px center;
+  background-repeat:no-repeat;
+  -webkit-background-size: 22px 22px; /* Safari,Google Chrome用 */
+   -moz-background-size: 22px 22px; /* Firefox用 */
+   -o-background-size: 22px 22px; /* Opera用 */
+  background-size: 22px 22px;
+  text-shadow: 1px 1px 1px #000033;
+  font-weight:bold;
+}
+
+#hotel_list .map_box .selected{
+  width:282px;
+  color:#fff;
+  margin:12px auto 0px auto;
+  background-color:#071d7b;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#0827a7), to(#071d7b));
+  -webkit-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  text-align:center;
+}
+
+#hotel_list .map_box .map_btn p.map{
+  background-image:url(../images/common/map_icon.png) left center no-repeat;
+  padding:8px 0;
+}
+
+#hotel_list .map_box .map_btn p.hotel a{
+  display:block;
+  background:url(../images/common/hotel_icon.png) 13px center no-repeat;
+  -webkit-background-size: 22px 22px; /* Safari,Google Chrome用 */
+   -moz-background-size: 22px 22px; /* Firefox用 */
+   -o-background-size: 22px 22px; /* Opera用 */
+  background-size: 22px 22px;
+  padding:12px 0;
+  width:100%;
+}
+
+#hotel_list .map_box .map_btn:after{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/common/point_wite_ar.png);
+}
+
+#hotel_list .map_box .selected:after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/common/point_wite_ar_u.png);
+}
+
+#hotel_list .map_box .map_container{
+  width:280px;
+  margin:0 auto;
+  border:solid 1px #666666;
+  margin-bottom:12px;
+}
+
+
+/* ===== plan ===== */
+
+.plan_ex_box{
+  margin:8px 12px 15px 12px;
+  border:solid 1px #bcbcbc;
+}
+
+.plan_ex_box img{
+  border-bottom:solid 2px #fff;
+
+}
+
+.plan_ex_box p{
+  line-height:140%;
+  padding:8px;
+}
+
+.plan_ex_box p span.red{
+  color:#F00;
+  font-weight:bold;
+}
+
+.plan_ex_box p span.blue{
+  color:#900;
+  font-weight:bold;
+}
+
+h3.plan_hotel_h{
+  text-align:center;
+  color:#006;
+  padding:5px 12px;
+  background-color:#b8c5e4;
+  background:url(../images/common/point_blue_tr_l.png) left center no-repeat, url(../images/common/point_blue_tr_r.png) right center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#b8c5e4));
+  border-top:solid 1px #d3ddf7;
+  -webkit-background-size:30px 15px,30px 15px,100% 100%; /* Safari,Google Chrome用 */
+   -moz-background-size:30px 15px,30px 15px,100% 100%;  /* Firefox用 */
+   -o-background-size:30px 15px,30px 15px,100% 100%;  /* Opera用 */
+  background-size:30px 15px,30px 15px,100% 100%;
+}
+
+
+/* ====hotel_box====== */
+
+
+#hotel_list .hotel_box{
+  margin:0 0 5px 0;
+  clear:both;
+  padding:12px 12px 10px 12px;
+  border-top:solid 3px #0223a6;
+}
+
+#hotel_list .hotel_box:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+#hotel_list .hotel_box .hotel_box_left{
+  float:left;
+  width:100px;
+}
+
+#hotel_list .hotel_box .hotel_box_left img{
+  border:solid 1px #666666;
+}
+
+#hotel_list .hotel_box .hotel_box_right{
+  float:left;
+}
+
+#hotel_list .hotel_box .hotel_box_right h3{
+  border-left:solid 5px #10409f;
+  font-weight:bold;
+  font-size:16px;
+  padding-left:10px;
+  margin-bottom:7px;
+}
+
+#hotel_list .hotel_box .hotel_box_right h3 a{
+  color:#10409f;
+}
+
+#hotel_list .hotel_box .hotel_box_right h4{
+  display:inline;
+  background-color:#ccc;
+  color:#cc0000;
+  border-radius:3px;
+    -webkit-border-radius:3px;
+  font-size:12px;
+  padding:3px 4px;
+}
+
+/* 20111216 ChouKen Begin*/
+/*
+#hotel_list .hotel_box .hotel_box_right h5{
+  display:block;
+  background-color:#F90;
+  color:#cc0000;
+  border-radius:0px;
+   -webkit-border-radius:0px;
+  font-size:16px;
+  padding:3px 4px;
+  text-align:center;
+}
+*/
+#hotel_list .hotel_box .hotel_box_right h5{
+  display:block;
+  color:#cc0000;
+  border-radius:0px;
+   -webkit-border-radius:0px;
+  font-size:16px;
+  padding:3px 4px;
+  text-align:left;
+}
+
+
+/* 20111216 ChouKen End*/
+
+#hotel_list .hotel_box .hotel_box_right p{
+  margin:7px 0;
+}
+/* 20111216 ChouKen Edit Begin*/
+#hotel_list .hotel_box .hotel_box_right p span.beforeOpen{
+  padding:3px 1px;
+  color:#cc0000;
+  font-size:16px;
+  margin-right:1px;
+  text-align:left;
+}
+
+#hotel_list .hotel_box .hotel_box_right p span.member{
+  background-color:#cc3300;
+  padding:3px 1px;
+  color:#fff;
+  font-size:12px;
+  margin-right:1px;
+}
+
+#hotel_list .hotel_box .hotel_box_right p span.general{
+  background-color:#0033cc;
+  padding:3px 1px;
+  color:#fff;
+  font-size:12px;
+  margin-right:1px;
+}
+/* 20111216 ChouKen Edit End*/
+
+#hotel_list .hotel_box .hotel_box_right p span.price{
+  color:#cc0000;
+}
+
+#hotel_list .hotel_box .hotel_box_right p span.condition{
+  color:#333333;
+  font-size:12px;
+}
+
+#hotel_list .hotel_box .hotel_box_right p.mn_phone{
+  background-color:#d8d8d8;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#d1d3fe), to(#dde4fd));
+  margin:0;
+  padding:2px 5px;
+}
+
+#hotel_list .hotel_box .hotel_box_right p.mn_phone a{
+  display:block;
+  text-align:center;
+  border: solid 1px #999999;
+  margin:3px;
+  color:#163aa0;
+  text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+  text-decoration:none;
+  font-weight:bold;
+  background-color:#d8d8d8;
+  background: url(../images/common/phone_icon.png) left center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#d8d8d8));
+  -webkit-background-size:20px 20px,100% 100%; /* Safari,Google Chrome用 */
+   -moz-background-size:20px 20px,100% 100%;  /* Firefox用 */
+   -o-background-size:20px 20px,100% 100%;  /* Opera用 */
+  background-size:20px 20px,100% 100%;
+  padding:6px 10px 6px 20px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  -webkit-box-shadow:1px 1px 1px 0 #7381b1;
+  box-shadow:1px 1px 1px 0 #7381b1;
+}
+
+#hotel_list .hotel_box .hotel_box_right p.mn_time{
+  color:#333;
+}
+
+#hotel_list .hotel_box .hotel_box_bottom{
+  clear:both;
+}
+#hotel_list .hotel_box .roomList{
+  clear:both;
+  margin:0px;
+  padding:3px 4px;
+  width:282px;
+  font-size: 16px;
+}
+
+#hotel_list .hotel_box .roomList .title{
+  background-color: #87CEFA;
+}
+#hotel_list .hotel_box .hotel_box_bottom ul{
+  margin-top:5px;
+}
+
+#hotel_list .hotel_box .hotel_box_bottom ul li{
+  float:left;
+  list-style:none;
+  width:50%;
+  text-align:center;
+}
+
+#hotel_list .hotel_box .hotel_box_bottom ul li a{
+  display:block;
+  padding:4px 0;
+  color:#fff;
+  text-shadow: 1px 1px 2px #7a4500;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:5px;
+    -webkit-border-radius:5px;
+  border:solid 1px #9f5004;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+}
+
+/* 20111216 ChouKen Begin*/
+#hotel_list .hotel_box .hotel_box_bottom ul li h5{
+  display:block;
+  padding:5px 0;
+  background-color:#F90;
+  color:#cc0000;
+  border-radius:5px;
+    -webkit-border-radius:5px;
+  font-size:16px;
+  text-align:center;
+}
+/* 20111216 ChouKen End*/
+
+#hotel_list .hotel_box .hotel_box_bottom ul li a.bt_hotel_detail{
+  padding-left:10px;
+  font-size:14px;
+  margin-right:3px;
+  background-color:#e07101;
+  background:url(../images/common/hotel_icon_s.png) left center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#f1a70e), to(#e07101));
+}
+
+#hotel_list .hotel_box .hotel_box_bottom ul li a.bt_hotel_reserve{
+  padding-left:10px;
+  font-size:14px;
+  margin-left:3px;
+  background-color:#e07101;
+  background:url(../images/common/reserve_icon_s.png) left center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#f1a70e), to(#e07101));
+}
+
+#hotel_list .hotel_box .hotel_box_bottom ul li a.bt_hotel_reserve_plan{
+  font-size:13px;
+  margin-left:3px;
+  padding-left:15px;
+  background-color:#e07101;
+  background:url(../images/common/reserve_icon_s.png) left center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#f1a70e), to(#e07101));
+}
+
+#hotel_list .hotel_box .hotel_box_bottom table{
+  font-size:13px;
+}
+
+#hotel_list .hotel_box .hotel_box_bottom table th{
+  border:solid 1px #666;
+  background-color:#859fe3;
+  font-weight:normal;
+  padding:2px;
+}
+
+#hotel_list .hotel_box .hotel_box_bottom table td{
+  border:solid 1px #666;
+  padding:2px;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#dfe4f0));
+}
+
+#hotel_list .hotel_box .hotel_box_bottom table td:last-child{
+  text-align:center;
+}
+
+#hotel_list .hotel_box .hotel_box_bottom table td.on{
+  color:#F00;
+  font-weight:bold;
+}
+
+#hotel_list .hotel_box .hotel_box_bottom table td.off{
+  color:#999;
+}
+
+#hotel_list .mn_cap{
+  color:#F00;
+  margin:10px 12px;
+  font-size:13px;
+}
+
+
+/* ===== 2-a_condition_select [form >> form.css] ===== */
+
+
+.place_select{
+  margin:12px 12px 0px 12px;
+  text-align:center;
+}
+
+.place_select p a{
+  display:block;
+  position:relative;
+  border-top: solid 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #565656;
+  border-bottom: solid 1px #565656;
+  padding:9px;
+  font-size:14px;
+  font-weight:bold;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color:#333;
+  text-decoration:none;
+  background-color:#d8d8d8;
+  background:url(../images/common/destination_icon.png) 10px center no-repeat , -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#c3c3c3));
+  -webkit-background-size: 30px 20px,100% 100% ; /* Safari,Google Chrome用 */
+   -moz-background-size:30px 20px,100% 100%; /* Firefox用 */
+   -o-background-size:30px 20px,100% 100%; /* Opera用 */
+  background-size:30px 20px,100% 100%;
+  box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,0.8),inset -1px -1px 1px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,0.8),inset -1px -1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.place_select p a:after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: block;
+  content: "";
+  margin-top: -8px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/common/point_orange_ar.png);
+  -webkit-background-size:15px 15px ; /* Safari,Google Chrome用 */
+   -moz-background-size:15px 150px ; /* Firefox用 */
+   -o-background-size:15px 15px ; /* Opera用 */
+  background-size:15px 15px ;
+}
+
+
+/* ===== 6-a_hotel_detail ===== */
+
+#hotel_detail{
+
+}
+
+#hotel_detail .hotel_container{
+  margin:7px 10px;
+  border:solid 1px #666;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0px 0px 3px 0px #666;
+  box-shadow:0px 0px 3px 0px #666;
+}
+
+#hotel_detail .hotel_container h3{
+  color:#fff;
+  background-color:#011f82;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#3f35cf), to(#011f82));
+  padding:7px 10px;
+}
+
+#hotel_detail .hotel_container .phone{
+  background-color:#d8d8d8;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#d1d3fe), to(#dde4fd));
+  margin:0;
+  padding:4px 12px;
+}
+
+#hotel_detail .hotel_container .phone a{
+  display:block;
+  text-align:center;
+  border: solid 1px #999999;
+  margin:3px;
+  color:#163aa0;
+  text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+  text-decoration:none;
+  font-weight:bold;
+  background-color:#d8d8d8;
+  background: url(../images/common/phone_icon.png) left center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#d8d8d8));
+  padding:6px 10px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  -webkit-box-shadow:1px 1px 1px 0 #7381b1;
+  box-shadow:1px 1px 1px 0 #7381b1;
+}
+
+
+#hotel_detail .hotel_container .hotel_photo{
+  margin:6px 0 2px 0;
+  text-align:center;
+}
+
+#hotel_detail .hotel_container .hotel_photo img{
+  border:solid 1px #666;
+  margin-bottom:8px;
+}
+
+#hotel_detail .hotel_container .btn_photo{
+  text-align:center;
+}
+
+#hotel_detail .hotel_container .btn_photo a{
+  display:inline;
+  margin:0 auto 10px auto;
+  padding:8px 20px 8px 30px;
+  font-size:12px;
+  font-weight:bold;
+  color:#fff;
+  text-shadow: 1px 1px 2px rgba(0 ,0 ,0 , 0.5);;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:7px;
+    -webkit-border-radius:7px;
+  border:solid 1px #092aac;
+  background-color:#536fdc;
+  background:url(../images/common/photo_icon.png) left center no-repeat,-webkit-gradient( linear,  left top, left bottom, from(#536fdc), to(#092aac));
+  -webkit-background-size: 27px 20px,100% 100% ; /* Safari,Google Chrome用 */
+   -moz-background-size:27px 20px,100% 100%; /* Firefox用 */
+   -o-background-size:27px 20px,100% 100%; /* Opera用 */
+  background-size:27px 20px,100% 100%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+}
+
+#hotel_detail .hotel_container .condition_select{
+  border-bottom:dotted 1px #666;
+  border-top:dotted 1px #666;
+  padding-bottom:4px;
+  margin-top:12px;
+}
+
+#hotel_detail .hotel_container .condition_select h4{
+  background:#F90;
+  color:#fff;
+  padding:3px;
+  text-align:center;
+  display:block;
+  font-size:13px;
+  border-top:solid 1px #996600;
+  border-left:solid 1px #996600;
+  border-right:solid 1px #996600;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+
+#hotel_detail .hotel_container .condition_select h5{
+  background:background:#FFFFFF;
+  color:#ff0000;
+  font-size:14px;
+  padding:12px;
+  margin:10px 0px 10px 0px;
+  /*padding:3px;*/
+  text-align:center;
+  display:block;
+  /*font-size:13px;
+  border-top:solid 1px #996600;
+  border-left:solid 1px #996600;
+  border-right:solid 1px #996600;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+  */
+  border:solid 2px #ff0000;
+}
+/* 20111216 ChouKen Begin
+#hotel_detail .hotel_container .hotel_info{
+  margin:15px 8px 12px 8px;
+  clear:both;
+}
+*/
+
+#hotel_detail .hotel_container .condition_select span{
+  color:#ff0000;
+  font-size:16px;
+  font-weight:bold;
+  margin:10px 0px 10px 0px;
+  display:block;
+}
+
+#hotel_detail .hotel_container .hotel_info{
+  margin:15px 5px 12px 5px;
+  clear:both;
+}
+/* 20111216 ChouKen End */
+
+#hotel_detail .hotel_container .hotel_info:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+#hotel_detail .hotel_container .hotel_info h4{
+  margin:8px 0;
+  font-size:13px;
+  -webkit-border-radius:3px 3px 0 0;
+  border-radius:3px 3px 0 0;
+  padding:5px 14px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-left:solid 1px #ccc;
+  border-right:solid 1px #ccc;
+  box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: url(../images/common/point_blue_re.png) left center no-repeat, -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+#hotel_detail .hotel_container .hotel_info p{
+  margin:5px 8px;
+  font-size:13px;
+}
+
+#hotel_detail .hotel_container .hotel_info ul{
+  margin:5px 8px;
+  font-size:13px;
+}
+
+#hotel_detail .hotel_container .hotel_info ul li{
+  list-style:none;
+}
+
+#hotel_detail .hotel_container .hotel_info ul.btn_info li{
+  list-style:none;
+  text-align:center;
+  float:left;
+
+}
+
+#hotel_detail .hotel_container .hotel_info ul li:first-child{
+  margin-right:5px;
+}
+
+#hotel_detail .hotel_container .hotel_info ul li a{
+  display:block;
+  margin:3px 0;
+  padding:6px 14px 6px 9px;
+  font-size:12px;
+  font-weight:bold;
+  color:#fff;
+  text-shadow: 1px 1px 2px rgba(0 ,0 ,0 , 0.5);;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:7px;
+    -webkit-border-radius:7px;
+  border:solid 1px #082289;
+  background-color:#082289;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#1336bf), to(#082289));
+  -webkit-background-size:100% 100% ; /* Safari,Google Chrome用 */
+   -moz-background-size:100% 100%; /* Firefox用 */
+   -o-background-size:100% 100%; /* Opera用 */
+  background-size:100% 100%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+  position:relative;
+}
+
+#hotel_detail .hotel_container .hotel_info ul li a:after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: block;
+  content: "";
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/common/point_wite_ar.png);
+  -webkit-background-size:10px 10px ; /* Safari,Google Chrome用 */
+   -moz-background-size:10px 10px ; /* Firefox用 */
+   -o-background-size:10px 10px ; /* Opera用 */
+  background-size:10px 10px ;
+}
+
+#hotel_detail .hotel_container .hotel_info ul li a.map {
+  width:67px;
+}
+
+/* 20111216 ChouKen Begin
+#hotel_detail .hotel_container .hotel_info ul li a.root {
+  width:138px;
+}
+*/
+
+#hotel_detail .hotel_container .hotel_info ul li a.root {
+  width:143px;
+}
+/* 20111216 ChouKen End*/
+
+#hotel_detail .hotel_container .hotel_info ul li a.around {
+  width:58px;
+}
+
+#hotel_detail .hotel_container .hotel_info ul li a.walk {
+  width:80px;
+}
+
+#hotel_detail .hotel_container .hotel_info ul.float_list li{
+  float:left;
+  padding-left:8px;
+  padding-right:4px;
+
+}
+
+/* 20111216 ChouKen Begin */
+#hotel_detail .hotel_container .hotel_info ul li.service_name{
+  float:left;
+  background-color:#e0e0e0;
+  font-size:12px;
+  padding:2px 6px 2px 4px;
+  font-weight:bold;
+  border-radius:7px;
+    -webkit-border-radius:7px;
+}
+
+#hotel_detail .hotel_container .hotel_info ul li.service_content{
+  float:left;
+  padding-left:8px;
+  padding-right:4px;
+
+}
+
+/* 20111216 ChouKen End */
+
+#hotel_detail .hotel_container .hotel_info ul.card li{
+  float:left;
+}
+
+#hotel_detail .hotel_container .hotel_info table.price_list{
+  border:solid 1px #999;
+  font-size:13px;
+  width:98%;
+  margin:0 auto;
+}
+
+#hotel_detail .hotel_container .hotel_info table.price_list th{
+  background-color:#d5def9;
+  border:solid 1px #999;
+  padding:3px;
+}
+
+#hotel_detail .hotel_container .hotel_info table.price_list td{
+  background-color:#fff;
+  border:solid 1px #999;
+  padding:3px 5px;
+}
+
+/* 駐車場・バス駐車場・送迎　本文非表示boxのdt */
+#hotel_detail #hotel_information dl dt{
+  margin:5px 8px 10px 8px;
+  font-size:13px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  padding:9px 14px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border:solid 1px #ccc;
+  box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: url(../images/common/point_blue_re.png) left center no-repeat, -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+  position:relative;
+}
+/* 20111219 ChouKen Begin*/
+
+#hotel_detail #hotel_information dl p a.button_info{
+  float:left;
+  display:block;
+  margin:3px 0;
+  padding:6px 14px 6px 9px;
+  font-size:12px;
+  font-weight:bold;
+  color:#fff;
+  text-shadow: 1px 1px 2px rgba(0 ,0 ,0 , 0.5);
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:7px;
+    -webkit-border-radius:7px;
+  border:solid 1px #082289;
+  background-color:#082289;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#1336bf), to(#082289));
+  -webkit-background-size:100% 100% ; /* Safari,Google Chrome用 */
+   -moz-background-size:100% 100%; /* Firefox用 */
+   -o-background-size:100% 100%; /* Opera用 */
+  background-size:100% 100%;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+position:relative;
+width:80px;
+text-align:center;
+}
+
+#hotel_detail #hotel_information dl p a.button_info:after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: block;
+  content: "";
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/common/point_wite_ar.png);
+  -webkit-background-size:10px 10px ; /* Safari,Google Chrome用 */
+   -moz-background-size:10px 10px ; /* Firefox用 */
+   -o-background-size:10px 10px ; /* Opera用 */
+  background-size:10px 10px ;
+}
+
+/* 20111219 ChouKen End*/
+
+/* 本文非表示boxのdt */
+#hotel_detail #hotel_information dl dt.selected{
+  margin:5px 8px 10px 8px;
+  font-size:13px;
+  -webkit-border-radius:3px 3px 0 0;
+  border-radius:3px 3px 0 0;
+  padding:5px 14px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-left:solid 1px #ccc;
+  border-right:solid 1px #ccc;
+  border-bottom:none;
+  box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: url(../images/common/point_blue_re.png) left center no-repeat, -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+  position:relative;
+}
+
+#hotel_detail #hotel_information dl dt:after{
+  position:absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+  border:solid 1px #7b7b7b;
+  border-radius:3px;
+    -webkit-border-radius:3px;
+  box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+  background-image:url(../images/common/point_plus_gr.gif);
+  background-color:#fff;
+  -webkit-background-size: 15px 15px; /* Safari,Google Chrome用 */
+   -moz-background-size: 15px 15px; /* Firefox用 */
+   -o-background-size: 15px 15px;
+}
+
+#hotel_detail #hotel_information dl dt.selected:after{
+  position:absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -6px;
+  width: 15px;
+  height: 15px;
+  border:solid 1px #7b7b7b;
+  border-radius:3px;
+    -webkit-border-radius:3px;
+  box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+  background-image:url(../images/common/point_minus_gr.gif);
+  background-color:#fff;
+  -webkit-background-size: 15px 15px; /* Safari,Google Chrome用 */
+   -moz-background-size: 15px 15px; /* Firefox用 */
+   -o-background-size: 15px 15px;
+}
+
+#hotel_detail #hotel_information dl dd{
+  margin:5px 16px 12px 16px;
+  font-size:13px;
+}
+
+.yakkan_btn{
+  text-align:center;
+  margin:15px 15px 8px 15px;
+  padding:10px 0 12px 0;
+}
+
+.yakkan_btn p a{
+  display:block;
+  position:relative;
+  font-size:14px;
+  border-top: solid 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #565656;
+  border-bottom: solid 1px #565656;
+  padding:8px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color:#000;
+  text-decoration:none;
+  background-color:#d8d8d8;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#c3c3c3));
+  box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,0.8),inset -1px -1px 1px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,0.8),inset -1px -1px 1px 0px rgba(0,0,0,0.2);
+  }
+
+.yakkan_btn p a:after{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  content: "";
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/common/point_orange_ar.png);
+  -webkit-background-size: 10px 10px ; /* Safari,Google Chrome用 */
+   -moz-background-size:10px 10px; /* Firefox用 */
+   -o-background-size:10px 10px; /* Opera用 */
+  background-size:10px 10px;
+}
+
+/* ===== 6-b_room_plan ===== */
+
+.searched {
+  margin:5px 8px;
+}
+
+.searched .searched_change a{
+  display:block;
+  position:relative;
+  border-top: solid 1px #999999;
+  border-left: solid 1px #999999;
+  border-right: solid 1px #565656;
+  border-bottom: solid 1px #565656;
+  padding:5px;
+  font-size:13px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color:#333;
+  text-decoration:none;
+  background-color:#d8d8d8;
+  background:url(../images/common/pen_icon.png) 10px center no-repeat , -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#c3c3c3));
+  -webkit-background-size: 30px 20px,100% 100% ; /* Safari,Google Chrome用 */
+   -moz-background-size:30px 20px,100% 100%; /* Firefox用 */
+   -o-background-size:30px 20px,100% 100%; /* Opera用 */
+  background-size:30px 20px,100% 100%;
+  box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,0.8),inset -1px -1px 1px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow:inset 1px 1px 1px 0px rgba(255,255,255,0.8),inset -1px -1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.searched .searched_change a:after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: block;
+  content: "";
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/common/point_orange_ar.png);
+  -webkit-background-size:10px 10px ; /* Safari,Google Chrome用 */
+   -moz-background-size:10px 10px ; /* Firefox用 */
+   -o-background-size:10px 10px ; /* Opera用 */
+  background-size:10px 10px ;
+}
+
+.searched_cation{
+  margin:4px 12px;
+  clear:both;
+  color:#900;
+  border:solid 1px #900;
+  padding:5px;
+  font-size:13px;
+  background-color:#FF9;
+}
+
+.searched_cation .redb{
+  font-weight:bold;
+}
+
+.searched ul li{
+  color:#900;
+  font-weight:bold;
+  list-style:none;
+  float:left;
+  padding-left:4px;
+  margin-top:8px;
+  margin-right:6px;
+  font-size:14px;
+}
+
+/*
+.searched ul li:nth-child(odd){
+  width:60%;
+  clear:both;
+}
+
+*/
+
+.searched .searched_comment{
+  clear:both;
+  font-size:13px;
+  padding-left:5px;
+}
+
+.searched .searched_change{
+  text-align:center;
+}
+
+.plan_room_tab{
+  margin:18px 8px 0 8px;
+}
+
+.plan_room_tab ul{
+  border-bottom:solid 4px #082289;
+}
+
+.plan_room_tab ul:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+.plan_room_tab ul li{
+  float:left;
+  list-style:none;
+  width:44.5%;
+  font-size:12px;
+  font-weight:bold;
+  border-radius:7px 7px 0 0;
+    -webkit-border-radius:7px 7px 0 0;
+  text-align:center;
+}
+
+.plan_room_tab ul li:first-child{
+  margin-right:5px;
+}
+
+.plan_room_tab ul li.on{
+  border:solid 1px #009;
+  background-color:#082289;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#1336bf), to(#082289));
+  color:#fff;
+  padding:5px 4px;
+}
+
+.plan_room_tab ul li.off{
+  border:solid 1px #999;
+  background-color:#ccc;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#ccc));
+  color:#666;
+}
+
+.plan_room_tab ul li.off a{
+  color:#666;
+  text-decoration:none;
+  display:block;
+  padding:5px 4px;
+}
+
+.plan_room_box{
+  margin:0 8px;
+  background-color:#d1d1d1;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#fff), to(#d1d1d1));
+  -webkit-box-shadow:inset 0px 0px 2px 0px rgba(0,0,0,0.6),inset 0 -2px 1px 0px rgba(255,255,255,0.9);
+  box-shadow:inset 0px 0px 2px 0px rgba(0,0,0,0.6),inset 0 -2px 1px 0px rgba(255,255,255,0.9);
+}
+
+.plan_room_box a{
+  display:block;
+  color:#000;
+  text-decoration:none;
+  position:relative;
+  width:100%;
+  padding:10px 0;
+}
+
+.plan_room_box a:after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: block;
+  content: "";
+  margin-top: -5px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/common/point_orange_ar.png);
+  background-repeat:no-repeat;
+  -webkit-background-size:20px 20px ; /* Safari,Google Chrome用 */
+   -moz-background-size:20px 20px ; /* Firefox用 */
+   -o-background-size:20px 20px ; /* Opera用 */
+  background-size:20px 20px ;
+}
+
+.plan_room_box .plan_icon{
+  float:left;
+  margin:0 10px 10px 10px;
+}
+
+.plan_room_box .plan_icon img{
+  border:solid 1px #666;
+}
+
+.plan_room_box h4{
+  color:#003399;
+  text-decoration:underline;
+  }
+
+.plan_room_box p{
+  margin-bottom:5px;
+  font-size:13px;
+  }
+
+
+.plan_room_box p span.member{
+  background-color:#cc3300;
+  padding:2px 3px;
+  color:#fff;
+  font-size:12px;
+  margin-right:4px;
+}
+
+.plan_room_box p span.general{
+  background-color:#0033cc;
+  padding:2px 3px;
+  color:#fff;
+  font-size:12px;
+  margin-right:4px;
+}
+
+.plan_room_box p span.price{
+  color:#cc0000;
+  font-size:14px;
+}
+
+.plan_room_box p span.condition{
+  color:#333333;
+  font-size:12px;
+}
+
+/* ===== 6-c_room_plan_detail===== */
+
+
+#hotel_detail .plan_container{
+  margin:7px 10px;
+  border:solid 1px #666;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0px 0px 3px 0px #666;
+  box-shadow:0px 0px 3px 0px #666;
+  padding:8px 0;
+}
+
+.plan_container h3{
+  margin:0 8px;
+}
+
+.plan_container h3 img{
+  border:solid 1px #666;
+}
+
+.plan_container .plan_explanation{
+  margin:5px 8px;
+  font-size:14px;
+}
+
+.plan_container .searched_detail ul{
+  border-top:dotted 1px #999;
+  border-bottom:dotted 1px #999;
+  padding:5px 8px 8px 8px;
+}
+
+.plan_container .searched_detail ul li{
+  color:#900;
+  font-weight:bold;
+  list-style:none;
+  padding-left:4px;
+  margin-top:3px;
+  margin-right:6px;
+  font-size:14px;
+}
+
+.plan_container .price_box{
+  margin:5px 18px;
+  padding:5px 0 10px 0;
+  border-bottom:dotted 1px #666;
+}
+
+.plan_container .price_box p{
+  font-size:14px;
+
+}
+
+.plan_container .price_box p span.member{
+  background-color:#cc3300;
+  padding:3px 3px;
+  color:#fff;
+  font-size:12px;
+  margin-right:4px;
+}
+
+.plan_container .price_box p span.general{
+  background-color:#0033cc;
+  padding:3px 3px;
+  color:#fff;
+  font-size:12px;
+  margin-right:4px;
+}
+
+.plan_container .price_box p span.price{
+  color:#cc0000;
+  font-size:18px;
+}
+
+.plan_container .price_box p span.price{
+  color:#cc0000;
+  font-size:18px;
+}
+
+.plan_container .price_box h4{
+  font-size:13px;
+  margin:8px 0 0 0;
+  background-color:#999;
+  color:#fff;
+  padding:2px;
+  width:80px;
+  text-align:center;
+  font-weight:normal;
+}
+
+.plan_container .price_box ul.items{
+  border-top:inset 1px #666;
+}
+
+.plan_container .price_box ul.items li{
+  font-size:14px;
+  list-style:none;
+  border-right:inset 1px #666;
+  border-left:inset 1px #666;
+  border-bottom:inset 1px #666;
+  padding:4px;
+  background-color:#efefef;
+  }
+
+.plan_container .reserve_btn{
+  margin:0 12px;
+}
+
+.plan_container .reserve_btn p a{
+  display:block;
+  text-align:center;
+  margin:10px auto 15px auto;
+  padding:8px;
+  color:#fff;
+  text-shadow: 1px 1px 2px #7a4500;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:7px;
+    -webkit-border-radius:7px;
+  border:solid 1px #9f5004;
+  background-color:#e07101;
+  background:-webkit-gradient( linear,  left top, left bottom, from(#f1a70e), to(#e07101));
+  -webkit-background-size:100% 100% ; /* Safari,Google Chrome用 */
+   -moz-background-size:100% 100% ;/* Firefox用 */
+   -o-background-size:100% 100% ;/* Opera用 */
+  background-size:100% 100% ;
+  -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);/*Safari*/
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), inset 0 -1px 0px rgba(0 ,0 ,0 , 0.5);
+  position:relative;
+}
+
+.plan_container .reserve_btn p a:after {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: block;
+  content: "";
+  margin-top: -7px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/common/point_wite_ar.png);
+  -webkit-background-size:15px 15px ; /* Safari,Google Chrome用 */
+   -moz-background-size:15px 15px ; /* Firefox用 */
+   -o-background-size:15px 15px ; /* Opera用 */
+  background-size:15px 15px ;
+}
+
+.plan_container .reserve_btn p a span.cap{
+  font-size:12px;
+}
+
+.plan_container .info_box {
+  margin:10px 0 0 0;
+  border-top:dotted 1px #999;
+  padding:10px 8px 0 8px;
+  }
+
+.plan_container .info_box .hotel_info {
+  margin-bottom:8px;
+}
+
+.plan_container .info_box .hotel_info h4{
+  margin:8px 0 4px 0;
+  font-size:13px;
+  -webkit-border-radius:3px 3px 0 0;
+  border-radius:3px 3px 0 0;
+  padding:5px 14px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-left:solid 1px #ccc;
+  border-right:solid 1px #ccc;
+  box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: url(../images/common/point_blue_re.png) left center no-repeat, -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+.plan_container .info_box .hotel_info  p{
+  margin:5px 8px;
+  font-size:13px;
+}
+
+.plan_container .info_box .hotel_info ul{
+  margin:0px 8px 5px 8px;
+  font-size:13px;
+}
+
+.plan_container .info_box .hotel_info  ul li{
+  list-style:none;
+}
+
+#error_page {
+  margin:7px 10px;
+  border:solid 1px #666;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0px 0px 3px 0px #666;
+  box-shadow:0px 0px 3px 0px #666;
+}
+
+#error_page h3 {
+  color:#fff;
+  background-color:#011f82;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#3f35cf), to(#011f82));
+  padding:7px 10px;
+  text-align:center;
+}
+#lang {
+  margin:0;
+  padding : 4px 0;
+
+  /*  margin:8px 0;
+  font-size:13px;*/
+  -webkit-border-radius:3px 3px 0 0;
+  border-radius:3px 3px 0 0;
+  padding:5px 14px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-left:solid 1px #ccc;
+  border-right:solid 1px #ccc;
+  box-shadow: inset 0px 1px 1px #fff;
+  /*background-color:#e0e0e0;*/
+
+  background-color:#EEEEEE;
+  /*background: -webkit-gradient( linear,  left top, left bottom, from(#d1d3fe), to(#dde4fd));*/
+}
+
+#lang:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+#lang ul{
+  margin: 0 auto;
+  padding: 4px 0;
+  text-align:center;
+  width: 220px;
+  font-size:60%;
+
+}
+
+#lang ul li{
+   float: left;
+   list-style:none outside none;
+   padding:5px 5px;
+   /*background:#99ccff;*/
+}
+
+#lang ul li a {
+  text-decoration:none;
+}
+#lang ul li img {
+   border:solid 1px #292929;
+}
+/* ===== parts ===== */
+
+.maintenance,.commingsoon{
+  border:solid 2px #F00;
+  font-size:13px;
+  font-weight:bold;
+  color:#FF0000;
+  padding:4px 0;
+  text-align:center;
+}

@@ -1,0 +1,375 @@
+﻿@media only screen and (max-width: 979px) {
+     
+    Html{
+        Width:100%;
+    }
+ 
+} /*デバイスの横幅が979px以下の場合*/
+ 
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+     
+    Html{
+        Width:100%;
+    }
+ 
+} /*デバイスの横幅が321以上768以下の場合*/
+ 
+@media only screen and (max-width: 320px) {
+     
+    header{
+        Width:90%;
+    }
+ 
+} /* デバイスの横幅が320px以下の場合 */
+
+
+body {
+	font: 100%/1.4 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+		Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	/*	background-color: #4E5869;*/
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+ul,ol,dl {
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+a img {
+	border: none;
+}
+
+a:link {
+	color: #414958;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+
+a:hover,a:active,a:focus {
+	color: #dc143c;
+	text-decoration: none;
+}
+
+.container {
+	background-color: #FFF;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* TOCOM ADD END */
+.title {
+	text-align: center;
+	color: #FFF;
+	width: 390px;
+	padding: 10px 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+.header {
+	background-color: #000099;
+	/*	background-color: #6F7D94;*/
+}
+
+.content {
+	padding: 10px 0;
+}
+
+.content ul,.content ol {
+	padding: 0 15px 15px 40px;
+}
+
+/* TOCOM ADD START */
+.content_top {
+	padding: 10px 0 0 0;
+}
+
+.content_top ul,.content_top ol {
+	padding: 0 15px 15px 40px;
+}
+
+.content_bottom {
+	padding: 0 0 10px 0;
+}
+
+.content_bottom ul,.content_bottom ol {
+	padding: 0 15px 15px 40px;
+}
+/* TOCOM ADD END */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+}
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.list_table {
+	border: solid 1px #999;
+	border-collapse: collapse;
+}
+
+.list_table th {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	background-color: #FC9;
+	padding: 5px;
+}
+
+.list_table td {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.list_table td.right {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: right;
+	font-size: 12px;
+}
+
+.menu_table {
+	border: solid 1px #999;
+	border-collapse: collapse;
+}
+
+.menu_table th {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	background-color: #FC9;
+	padding: 5px;
+	size: 18px;
+}
+
+.menu_table td {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	background-color: #b0c4de;
+	text-align: left;
+	font-size: 12px;
+	font-size: 18px;
+}
+
+.menu_table a {
+	text-decoration: none;
+	color: #2f4f4f;
+}
+
+.menu_table a:hover {
+	color: #ffffff
+}
+
+.menu_table a:active {
+	color: #d03
+}
+/* TOCOM ADD START */
+.input_table {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.input_table th {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	background-color: #FC9;
+	padding: 5px;
+}
+
+.input_table td {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+.input_table td.right {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: right;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+.noline_table {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.noline_table th {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	background-color: #FC9;
+	padding: 5px;
+}
+
+.noline_table td {
+	border: solid 1px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 12px;
+	word-break: break-all;
+}
+
+.noline_table td.noline {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.frame_table {
+	width: 700px;
+	border: solid 0px #999;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.frame_table td.head {
+/*	border: solid 0px #999;*/
+	border-left: solid 12px #0000FF;
+/*	border-collapse: collapse;*/
+	padding: 5px;
+	text-align: left;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.frame_table td.item {
+/*	height:100px;*/
+	border: solid 0px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.frame_table td.msg {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 20px;
+}
+
+.frame_table td.msg_red {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 20px;
+	color: red;
+}
+
+.frame_table td.msg_attntn {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	padding: 5px;
+	text-align: left;
+	font-size: 20px;
+	color: red;
+}
+
+.frame_table td.msg_info {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	padding: 2px;
+	text-align: left;
+	font-size: 20px;
+	color: black;
+}
+
+.msg_attntn {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 20px;
+	color: red;
+}
+
+.step_table {
+	border: solid 0px #999;
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin-top: 20px;
+}
+
+.step_table td.stepNo {
+	width: 80px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/box.png");
+	background-size:contain;;
+	/*background-size:contain;*/
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	/*	font-weight:bold;*/
+	color: white;
+}
+
+.step_table td.stepText {
+	width: 180px;
+	height: 90px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/boxText.png");
+	background-size: contain;
+	/*background-size:contain;*/
+	text-align: center;
+	font-size: 18px;
+	color: #0060B6;
+	font-weight: bold;
+}
+
+.step_table td.arrow {
+	width: 50px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/arrow.png");
+	background-size: 90%;
+	/*background-size:contain;*/
+	padding: 3px;
+}

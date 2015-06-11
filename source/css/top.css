@@ -1,0 +1,578 @@
+@charset "shift_jis";
+
+/* =======================================
+
+  Top CSS
+
+========================================== */
+
+/* ===== container ===== */
+
+div#container_top{
+  padding:3px 0 5px 0;
+  background:url(../images/common/container_bg.gif) top repeat-x;
+  -webkit-background-size: 1px 13px; /* Safari,Google Chrome用 */
+   -moz-background-size: 1px 13px; /* Firefox用 */
+   -o-background-size: 1px 13px; /* Opera用 */
+  background-size: 1px 13px;
+}
+
+
+/* ===== Information ===== */
+
+#information{
+  margin:5px 10px 0 10px;
+  }
+
+#information h2{
+  display:inline;
+  padding:2px 5px;
+  background-color:#e5e5e5;
+  color:#cc0000;
+  font-size:11px;
+  font-weight:normal;
+  }
+
+#information p{
+  margin:5px 0;
+  /*padding-left:15px;*/
+  /*background:url(../images/common/point_red_tr.png) left top no-repeat;
+  -webkit-background-size: 8px 10px; /* Safari,Google Chrome用 */
+   /*-moz-background-size: 8px 10px; /* Firefox用 */
+   /*-o-background-size: 8px 10px; /* Opera用 */
+  /*background-size: 8px 10px; /* Opera用 */
+
+  }
+
+#information p a{
+  color:#000;
+  text-decoration:underline;
+  }
+
+/* ===== Reservation_nav ===== */
+
+#reservation_nav{
+  margin:10px 0;
+}
+
+#reservation_nav h2{
+  margin:10px 0;
+  padding:4px 10px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-bottom:solid 1px #999999;
+  box-shadow: inset 0px 1px 1px #fff;
+  -webkit-box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+#reservation_nav ul{
+  margin:5px 5px;
+}
+
+#reservation_nav ul:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+#reservation_nav ul li{
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: 11px;
+  list-style:none;
+}
+
+#reservation_nav ul li a{
+  display: block;
+  color:#990000;
+  text-decoration:none;
+  line-height:110%;
+}
+
+#reservation_nav ul li img{
+  width: 71px;
+}
+
+
+/* ===== Reservation_nav_icon3vr ===== */
+
+#reservation_nav_ic3{
+  margin:10px 0;
+}
+
+#reservation_nav_ic3 h2{
+  margin:10px 0;
+  padding:4px 10px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-bottom:solid 1px #999999;
+  box-shadow: inset 0px 1px 1px #fff;
+  -webkit-box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+#reservation_nav_ic3 ul{
+  margin:5px 5px;
+}
+
+#reservation_nav_ic3 ul:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+#reservation_nav_ic3 ul li{
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-size: 13px;
+  list-style:none;
+}
+
+#reservation_nav_ic3 ul li:nth-of-type(2){
+  float: left;
+  width: 34%;
+  text-align: center;
+  font-size: 13px;
+  list-style:none;
+}
+
+#reservation_nav_ic3 ul li a{
+  display: block;
+  color:#990000;
+  text-decoration:none;
+  line-height:110%;
+}
+
+#reservation_nav_ic3 ul li img{
+  /*width: 80px;*/
+  height: 71px;
+}
+
+
+/* ===== Search_box ===== */
+
+#search_box{
+  border:solid 1px #5d5f65;
+  padding:5px 3px 5px 3px;
+  margin:12px 12px 8px 12px;
+  background-color:#d4dbf8;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#98a9ea));
+}
+
+#search_box:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+#search_box ul{
+  margin-bottom:12px;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+#search_box ul li{
+  width:32%;
+  font-size:14px;
+  float:left;
+  text-align:center;
+}
+
+#search_box ul li input[type="radio"]{
+ font-size:16px;
+ width:auto;
+ margin-bottom:8px;
+}
+
+#search_box #search_input{
+  float:left;
+  width:70%;
+  padding-left:5px;
+}
+
+#search_box #search_input input{
+  padding: 8px;
+  font-size:14px;
+  width:92%;
+  border-radius:4px;
+    -webkit-border-radius:4px;
+  border:solid 1px #666666;
+}
+
+#search_box #search_button{
+  float:left;
+
+}
+
+#search_box #search_button .button01{
+  margin-left: 10px;
+  padding:5px 17px;
+  background-color:#071d7b;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#0827a7), to(#071d7b));
+  color: #fff;
+  -webkit-appearance: none;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow:inset -1px -1px 1px  rgba(0, 20, 90, 0.5);
+  text-decoration:none;
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.5), 0 1px 1px rgba(255,255,255,0.4);
+  font-size:14px;
+}
+
+#search_box span.font_normal{
+  font-size:14px;
+}
+
+/* ===== Button_box ===== */
+
+#button_box{
+  margin:10px 12px;
+}
+
+#button_box ul li{
+  margin-bottom:8px;
+  background-color:#071d7b;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#0827a7), to(#071d7b));
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  text-align:center;
+  list-style:none;
+}
+
+#button_box ul li.hotel_list{
+  margin-bottom:8px;
+}
+
+#button_box ul li.hotel_list a,#button_box ul li.midnight a{
+  display:block;
+  padding:12px 0;
+  color: #fff;
+  text-decoration:none;
+}
+
+#button_box ul li.hotel_list a{
+  background-image:url(../images/top/icon_hotel_list.png),url(../images/top/icon_next01.png);
+  background-position: 13px center, right center;
+  background-repeat:no-repeat,no-repeat;
+  -webkit-background-size: 18px 23px, 37px 17px; /* Safari,Google Chrome用 */
+   -moz-background-size: 18px 23px, 37px 17px; /* Firefox用 */
+   -o-background-size: 18px 23px, 37px 17px; /* Opera用 */
+  background-size: 18px 23px, 37px 17px;
+  text-shadow: 1px 1px 1px #000033;
+}
+
+#button_box ul li.midnight a{
+  font-size:13px;
+  background-image:url(../images/top/icon_midnight.png),url(../images/top/icon_next01.png);
+  background-position: 13px center, right center;
+  background-repeat:no-repeat,no-repeat;
+  -webkit-background-size: 18px 23px, 37px 17px; /* Safari,Google Chrome用 */
+   -moz-background-size: 18px 23px, 37px 17px; /* Firefox用 */
+   -o-background-size: 18px 23px, 37px 17px; /* Opera用 */
+  background-size: 18px 23px, 37px 17px;
+  text-shadow: 1px 1px 1px #000033;
+}
+
+
+/* ===== special_bunner ===== */
+
+#special{
+  margin:0;
+}
+
+#special h2{
+  margin:10px 0;
+  padding:4px 10px;
+  font-weight:bold;
+  border-top:solid 1px #999999;
+  border-bottom:solid 1px #999999;
+  box-shadow: inset 0px 1px 1px #fff;
+  -webkit-box-shadow: inset 0px 1px 1px #fff;
+  background-color:#e0e0e0;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#e0e0e0), to(#fff));
+}
+
+#f_bunner {
+  width: 320px;
+  height:90px;
+  margin: 6px auto 0px;
+  padding-bottom:10px;
+  /*clear : both;*/
+}
+
+#container_bn {
+  width: 262px;
+  margin: 0 auto;
+  float: left;
+  overflow:hidden;
+  position:relative;
+  padding:0px;
+}
+
+#banner {
+  border: 1px solid #666;
+  margin-bottom: 5px;
+}
+
+#banner ul {
+  list-style: none;
+  position: relative;
+  margin-left: 0px;
+  overflow: hidden;
+  width:260px;
+  height: 70px;
+}
+
+#banner ul li {
+  float: left;
+  width: 260px;
+  position: absolute;
+}
+
+div#pagenation {
+   /*position: relative;*/
+   top:-70px;
+   overflow: hidden;
+}
+
+div#pagenation ul {
+  position:relative;
+  left:50%;
+  float:left;
+  list-style: none;
+}
+
+div#pagenation li {
+   position:relative;
+   left:-50%;
+   float:left;
+   margin: 0 2px;
+
+}
+
+div#pagenation li a {
+  width:12px;
+  height:12px;
+  overflow:hidden;
+  display:block;
+  background-image:url(../images/bn/pagenation.gif);
+  background-position:0 0;
+}
+
+div#pagenation li.active a,
+div#pagenation li a:hover {
+  background-position:0 12px;
+}
+
+div#pagenation li a img {
+  visibility:hidden;
+  display: none;
+}
+/*
+#btn-prev {
+  position: relative;
+  left: -29px;
+  top: -76px;
+}
+
+#btn-next {
+  position: relative;
+  left: 233px;
+  top: -76px;
+}
+
+*/
+#f_bunner .left_banner_b {
+   float:left;
+   margin:0px;
+}
+#f_bunner .right_banner_b {
+  float:left;
+  margin:0px;
+}
+/* ===== user_check ===== */
+
+#user_check{
+  margin:10px 0;
+  padding:10px;
+  border-top:solid 1px #292929;
+  border-bottom:solid 1px #292929;
+}
+
+#user_check:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+/*2012/02/03 zhaojian Begin*/
+#notice_special_info {
+  margin:10px 0;
+  padding:10px;
+  border-top:solid 1px #292929;
+  border-bottom:solid 1px #292929;
+}
+
+
+#notice_special_info ul li {
+    text-align:left;
+}
+
+#site_link {
+  border-top:solid 1px #292929;
+  margin:0;
+  padding : 4px 0;
+}
+
+#site_link:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+#site_link ul{
+   margin: 0 auto;
+   padding: 4px 0;
+   text-align: center;
+   width: 220px;
+}
+
+#site_link ul li{
+  float: left;
+  font-size:90%;
+  list-style:none outside none;
+  padding:5px 7px;
+
+}
+
+#site_link ul li:.mb_link {
+  width:80px;
+}
+
+#site_link .txt-center li:.pc_link {
+  width:80px;
+  float:left;
+}
+
+#site_link .txt-center li:.version_line {
+  width:10px;
+}
+
+#user_check ul li a{
+  display:block;
+  text-align:left;
+}
+/*2012/02/03 zhaojian End*/
+#user_check ul li{
+  float:left;
+  width:50%;
+  text-align:center;
+  list-style:none;
+}
+
+#user_check ul li a{
+  border:solid 1px #333333;
+  display:block;
+  color:#000;
+  background-color:#CCCCCC;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+  text-decoration:none;
+  text-align:left;
+  -webkit-box-shadow:inset -1px -1px 1px rgba(255,255,255,1);
+  box-shadow:inset -1px -1px 1px rgba(255,255,255,1);
+}
+
+#user_check ul li.reserve_check a{
+  height:43px;
+  padding-top:8px;
+  padding-left:40px;
+  margin-right:5px;
+  background:url(../images/top/icon_check.png) no-repeat left center, -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#bbbbbb));
+  -webkit-background-size: 40px 32px,1px 51px; /* Safari,Google Chrome用 */
+   -moz-background-size: 40px 32px,1px 51px; /* Firefox用 */
+   -o-background-size: 40px 32px,1px 51px; /* Opera用 */
+  background-size: 40px 32px,1px 51px;
+  text-align : left; /* 20111216 ChouKen ADD*/
+}
+
+#user_check ul li.point_check a{
+  height:43px;
+  padding-top:8px;
+  padding-left:40px;
+  margin-left:5px;
+  background:url(../images/top/icon_point.png) no-repeat left center, -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#bbbbbb));
+  -webkit-background-size: 40px 32px,1px 51px; /* Safari,Google Chrome用 */
+   -moz-background-size: 40px 32px,1px 51px; /* Firefox用 */
+   -o-background-size: 40px 32px,1px 51px; /* Opera用 */
+  background-size: 40px 32px,1px 51px;
+  text-align : left; /* 20111216 ChouKen ADD*/
+}
+
+
+/* ===== footer_nav ===== */
+
+#footer_nav{
+  margin:0;
+  background-color:#CCCCCC;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#bbbbbb));
+}
+
+#footer_nav:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+
+#footer_nav ul{
+  width:100%;
+  border-top:solid 1px #666666;
+}
+
+#footer_nav ul li{
+  float:left;
+  list-style:none;
+  text-align:center;
+  width:33%;
+  font-size:12px;
+}
+
+#footer_nav ul li:first-child a{
+  border-right:solid 1px #666666;
+}
+
+#footer_nav ul li:last-child a{
+  border-left:solid 1px #666666;
+}
+
+#footer_nav ul li a{
+  display:block;
+  color:#000;
+  text-decoration:none;
+  padding:8px;
+  background-color:#CCCCCC;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#bbbbbb));
+  -webkit-box-shadow:inset 0px -1px 1px rgba(255,255,255,1);
+  box-shadow:inset 0px -1px 0px rgba(255,255,255,1);
+  }
+
+#footer_nav ul li a{
+  display:block;
+  color:#000;
+  text-decoration:none;
+  padding:8px;
+}
+
+#balloon {
+  width: 200px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  box-shadow: 0 0 15px #666;
+  -webkit-box-shadow: 0 0 15px #666;
+  position: absolute;
+  background-color: rgba(0, 51, 102, 0.9);
+  padding: 20px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  font-size:13px;
+}
+
+#balloon p {
+  margin: 0;
+}
+
+.hatena-bookmark-button-frame {
+  width:50px !important;
+}

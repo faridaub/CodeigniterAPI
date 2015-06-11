@@ -1,0 +1,168 @@
+@charset "shift_jis";
+
+/* =======================================
+
+  Calender CSS
+
+========================================== */
+
+
+/* 1.Calender Box
+========================================== */
+
+
+#calender_box{
+  width:96%;
+  text-align:center;
+  margin:8px auto;
+  /*
+  background-color:#c3d3f0;
+  background: -webkit-gradient( linear,  left top, left bottom, from(#f2f5fc), to(#c3d3f0));
+
+  -webkit-box-shadow: 1px 1px 3px rgba(0 ,0 ,0 , 0.5);
+  box-shadow: 1px 1px 3px rgba(0 ,0 ,0 , 0.5);
+  border-radius:10px;
+    -webkit-border-radius:10px;
+*/
+
+}
+
+
+#calender_box .month{
+  border-radius:10px;
+    -webkit-border-radius:10px;
+  -webkit-box-shadow: 1px 1px 2px rgba(0 ,0 ,0 , 0.5);
+  box-shadow: 1px 1px 2px rgba(0 ,0 ,0 , 0.5);
+  background-color:#8aa6da;
+  padding:5px 5px;
+  margin-bottom:10px;
+
+
+}
+
+#calender_box .month:after { /* for Modern Browser */
+  content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+
+}
+
+
+#calender_box .month div{
+  /*float:left;*/
+}
+
+#calender_box .month div.prev_month,#calender_box .month div.next_month{
+  width:23%;
+  border-radius:10px;
+    -webkit-border-radius:10px;
+  background-color:#6885ba;
+  color:#fff;
+  text-align:center;
+
+
+}
+#calender_box .month div.prev_month {
+  float: left;
+}
+
+#calender_box .month div.next_month{
+    float: right;
+}
+
+#calender_box .month div.prev_month a,#calender_box .month div.next_month a{
+  color:#fff;
+  padding:6px 6px;
+  display:block;
+  text-decoration:none;
+  overflow: hidden;
+
+}
+
+#calender_box .month div.now_month{
+  width:50%;
+  padding-top:6px;
+  font-weight:bold;
+  color:#fff;
+
+  text-align: center;
+  margin-right:auto;
+  margin-left:auto;
+  /*width:96%;*/
+
+}
+
+#calender_box table{
+  margin:0 auto 8px auto;
+  float:left;
+  border:solid 1px #666;
+  width:100%;
+}
+
+#calender_box table th.w {
+  border:solid 1px #999999;
+  padding:6px 0;
+  background-color:#8aa6da;
+  font-weight:bold;
+  color:#fff;
+}
+
+
+#calender_box table td {
+  border:solid 1px #999999;
+  text-align:center;
+  color:#CCCCCC;
+  background-color:#fff;
+}
+
+#calender_box table td.su {
+background-color: #f6daf0;
+}
+
+#calender_box table td.holiday {
+background-color: #CC0000;
+}
+#calender_box table td.sa {
+background-color: #f8e8ce;
+}
+
+#calender_box table td.selectDay{
+    background-image: url(/sp/images/calendar_current.png) !important;
+    border: 1px solid #293649 !important;
+}
+#calender_box table td  a{
+  display:block;
+  width:100%;
+  height:100%;
+  color:#000000;
+  padding:12px 0;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+}
+
+#calender_box table td.cal_td_unuse{
+    padding:12px 0;
+}
+
+#calender_box table td  a:hover {
+  background-color:#BDE4FF;
+}
+
+.close{
+  clear:both;
+  text-align:center;
+  margin-bottom:5px;
+
+}
+
+.close a{
+  display:block;
+  width:40%;
+  margin:0 auto;
+  border-radius:10px;
+    -webkit-border-radius:10px;
+  background-color:#6885ba;
+  color:#fff;
+  padding:8px 9px;
+  text-decoration:none;
+}
+

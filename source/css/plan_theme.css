@@ -1,0 +1,90 @@
+@charset "shift_jis";
+
+/* =======================================
+
+	Common CSS
+
+========================================== */
+
+.pt_box{
+	margin:7px 10px 13px 10px;
+	border:solid 1px #666;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow:0px 0px 3px 0px #666; 
+	box-shadow:0px 0px 3px 0px #666;
+}
+
+.pt_box:after { /* for Modern Browser */
+	content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+
+
+.pt_box h3{
+	color:#fff;
+	background-color:#011f82;
+	background: -webkit-gradient( linear,  left top, left bottom, from(#3f35cf), to(#011f82));
+	padding:5px 10px;
+	font-size:14px;
+}
+
+.pt_box .pt_box_inner{
+	padding:7px 0px 3px 6px;
+}
+
+.pt_box .pt_box_inner:after { /* for Modern Browser */
+	content: "."; display: block; clear: both; height: 0; visibility: hidden; font-size: 0;
+}
+.pt_box .pt_small{
+ 
+}
+
+.pt_box .pt_small a{
+	margin-right:6px;
+	border-top:solid 1px #ccc;
+	border-left:solid 1px #ccc;
+	border-right:solid 1px #999;
+	border-bottom:solid 1px #666;
+	width:45%;
+	float:left;
+	padding:3px;
+	margin-bottom:5px;
+	font-size:13px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#000;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background-color:#fff;
+	background: -webkit-gradient( linear,  left top, left bottom, from(#fff), to(#ccc));
+	position:relative;
+}
+
+.pt_box .pt_small a:after{
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	display: block;
+	content: "";
+	margin-top: 12px;
+	width: 15px;
+	height: 10px;
+	background-image: url(../images/common/point_orange_ar2.png);
+	-webkit-background-size:15px 10px; /* Safari,Google Chrome—p */ 
+ 	-moz-background-size:15px 10px; /* Firefox—p */ 
+ 	-o-background-size:15px 10px; /* Opera—p */ 
+	background-size:15px 10px;
+}
+
+
+.pt_box .pt_small img{
+	border:solid 1px #999;
+	float:left;
+	margin-right:5px;
+}
+
+.pt_box .pt_small p{
+	line-height:120%;
+}
+
+
